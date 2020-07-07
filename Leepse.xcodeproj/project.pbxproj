@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91067421CF7B6E2A2E373BFF /* Pods_Leepse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B8BD031A94C16A8ACE43D8 /* Pods_Leepse.framework */; };
 		F73C91D124B3342400744ACC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C91D024B3342400744ACC /* AppDelegate.swift */; };
 		F73C91D324B3342400744ACC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C91D224B3342400744ACC /* SceneDelegate.swift */; };
-		F73C91D524B3342400744ACC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C91D424B3342400744ACC /* ViewController.swift */; };
 		F73C91D824B3342400744ACC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73C91D624B3342400744ACC /* Main.storyboard */; };
 		F73C91DA24B3342800744ACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F73C91D924B3342800744ACC /* Assets.xcassets */; };
 		F73C91DD24B3342800744ACC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73C91DB24B3342800744ACC /* LaunchScreen.storyboard */; };
+		F7AACA1F24B4B02500720458 /* FirstScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AACA1E24B4B02500720458 /* FirstScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		54B8BD031A94C16A8ACE43D8 /* Pods_Leepse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Leepse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98F41DA9D0851E5834044166 /* Pods-Leepse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leepse.release.xcconfig"; path = "Target Support Files/Pods-Leepse/Pods-Leepse.release.xcconfig"; sourceTree = "<group>"; };
+		CAD58EBA8FFA3CD002E9D649 /* Pods-Leepse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leepse.debug.xcconfig"; path = "Target Support Files/Pods-Leepse/Pods-Leepse.debug.xcconfig"; sourceTree = "<group>"; };
 		F73C91CD24B3342400744ACC /* Leepse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Leepse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F73C91D024B3342400744ACC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F73C91D224B3342400744ACC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F73C91D424B3342400744ACC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F73C91D724B3342400744ACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F73C91D924B3342800744ACC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F73C91DC24B3342800744ACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F73C91DE24B3342800744ACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7AACA1E24B4B02500720458 /* FirstScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91067421CF7B6E2A2E373BFF /* Pods_Leepse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B99F0BE2D6B62E873199AA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54B8BD031A94C16A8ACE43D8 /* Pods_Leepse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75F218D045271EFD2EC0AE00 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CAD58EBA8FFA3CD002E9D649 /* Pods-Leepse.debug.xcconfig */,
+				98F41DA9D0851E5834044166 /* Pods-Leepse.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F73C91C424B3342400744ACC = {
 			isa = PBXGroup;
 			children = (
 				F73C91CF24B3342400744ACC /* Leepse */,
 				F73C91CE24B3342400744ACC /* Products */,
+				75F218D045271EFD2EC0AE00 /* Pods */,
+				1B99F0BE2D6B62E873199AA3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,8 +80,9 @@
 		F73C91CF24B3342400744ACC /* Leepse */ = {
 			isa = PBXGroup;
 			children = (
-				F73C91D424B3342400744ACC /* ViewController.swift */,
-				F73C91D624B3342400744ACC /* Main.storyboard */,
+				F7AACA1A24B474DA00720458 /* Model */,
+				F7AACA1B24B474E900720458 /* View */,
+				F7AACA1D24B4A84700720458 /* Controller */,
 				F73C91E424B3343900744ACC /* SupportingFiles */,
 				F73C91DE24B3342800744ACC /* Info.plist */,
 			);
@@ -75,6 +100,29 @@
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
+		F7AACA1A24B474DA00720458 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7AACA1B24B474E900720458 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F73C91D624B3342400744ACC /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F7AACA1D24B4A84700720458 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F7AACA1E24B4B02500720458 /* FirstScreenViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,6 +130,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F73C91E124B3342800744ACC /* Build configuration list for PBXNativeTarget "Leepse" */;
 			buildPhases = (
+				F7AACA1C24B478DB00720458 /* Run Script */,
+				CFBF66957BE9A5D8CFBC1011 /* [CP] Check Pods Manifest.lock */,
 				F73C91C924B3342400744ACC /* Sources */,
 				F73C91CA24B3342400744ACC /* Frameworks */,
 				F73C91CB24B3342400744ACC /* Resources */,
@@ -141,12 +191,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CFBF66957BE9A5D8CFBC1011 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Leepse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7AACA1C24B478DB00720458 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F73C91C924B3342400744ACC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F73C91D524B3342400744ACC /* ViewController.swift in Sources */,
+				F7AACA1F24B4B02500720458 /* FirstScreenViewController.swift in Sources */,
 				F73C91D124B3342400744ACC /* AppDelegate.swift in Sources */,
 				F73C91D324B3342400744ACC /* SceneDelegate.swift in Sources */,
 			);
@@ -290,6 +383,7 @@
 		};
 		F73C91E224B3342800744ACC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAD58EBA8FFA3CD002E9D649 /* Pods-Leepse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -308,6 +402,7 @@
 		};
 		F73C91E324B3342800744ACC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98F41DA9D0851E5834044166 /* Pods-Leepse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
