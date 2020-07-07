@@ -14,6 +14,8 @@
 		F73C91DA24B3342800744ACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F73C91D924B3342800744ACC /* Assets.xcassets */; };
 		F73C91DD24B3342800744ACC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73C91DB24B3342800744ACC /* LaunchScreen.storyboard */; };
 		F7AACA1F24B4B02500720458 /* FirstScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AACA1E24B4B02500720458 /* FirstScreenViewController.swift */; };
+		F7AACA2324B4DAEE00720458 /* Last.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7AACA2224B4DAEE00720458 /* Last.storyboard */; };
+		F7AACA2524B4DB1500720458 /* LastScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AACA2424B4DB1500720458 /* LastScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		F73C91DC24B3342800744ACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F73C91DE24B3342800744ACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7AACA1E24B4B02500720458 /* FirstScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenViewController.swift; sourceTree = "<group>"; };
+		F7AACA2224B4DAEE00720458 /* Last.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Last.storyboard; sourceTree = "<group>"; };
+		F7AACA2424B4DB1500720458 /* LastScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				F73C91D624B3342400744ACC /* Main.storyboard */,
+				F7AACA2224B4DAEE00720458 /* Last.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				F7AACA1E24B4B02500720458 /* FirstScreenViewController.swift */,
+				F7AACA2424B4DB1500720458 /* LastScreenViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -185,6 +191,7 @@
 			files = (
 				F73C91DD24B3342800744ACC /* LaunchScreen.storyboard in Resources */,
 				F73C91DA24B3342800744ACC /* Assets.xcassets in Resources */,
+				F7AACA2324B4DAEE00720458 /* Last.storyboard in Resources */,
 				F73C91D824B3342400744ACC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7AACA2524B4DB1500720458 /* LastScreenViewController.swift in Sources */,
 				F7AACA1F24B4B02500720458 /* FirstScreenViewController.swift in Sources */,
 				F73C91D124B3342400744ACC /* AppDelegate.swift in Sources */,
 				F73C91D324B3342400744ACC /* SceneDelegate.swift in Sources */,
