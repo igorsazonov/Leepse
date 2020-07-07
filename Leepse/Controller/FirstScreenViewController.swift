@@ -22,10 +22,15 @@ class FirstScreenViewController: UIViewController {
         
     }
     
+    @IBOutlet weak var messageHeaderLabel: UILabel!
+    
+    @IBOutlet weak var messageLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         settingUpTheViewButtons()
-        
+        messageHeaderLabel.text = "A smart forum"
+        messageLabel.text = "where you decide who can reply to your posts, and who can't"
     }
     
     func settingUpTheViewButtons() {

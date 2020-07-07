@@ -10,7 +10,6 @@
         <!--First Screen View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="FirstScreenViewController" customModule="Leepse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -47,16 +46,31 @@
                                     <action selector="tupLogIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZZm-HO-Oyf"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvn-TQ-3JG">
+                                <rect key="frame" x="60" y="489" width="294" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deG-wC-Czg">
+                                <rect key="frame" x="93" y="518" width="229" height="79"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.92941176470588238" green="0.90196078431372551" blue="0.83137254901960778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Jhf-cj-afo" firstAttribute="top" secondItem="deG-wC-Czg" secondAttribute="bottom" constant="117" id="3s8-kD-ME7"/>
                             <constraint firstItem="Ffp-vC-TO1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-15" id="5Ev-7C-gjd"/>
                             <constraint firstItem="Jhf-cj-afo" firstAttribute="top" secondItem="Ffp-vC-TO1" secondAttribute="bottom" constant="87" id="6Ef-1K-609"/>
                             <constraint firstItem="Tf7-2P-yj1" firstAttribute="top" secondItem="Ffp-vC-TO1" secondAttribute="bottom" constant="134" id="8yo-ns-VQW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="heF-HC-dip" secondAttribute="bottom" constant="600" id="9LH-B5-doo"/>
+                            <constraint firstItem="Jhf-cj-afo" firstAttribute="top" secondItem="vvn-TQ-3JG" secondAttribute="bottom" constant="196" id="BKD-LB-CfC"/>
                             <constraint firstItem="Tf7-2P-yj1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="145" id="CYh-wR-Oju"/>
                             <constraint firstItem="0W4-aL-5eD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="EEZ-Og-z6g"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tf7-2P-yj1" secondAttribute="trailing" constant="145" id="F21-as-yOe"/>
+                            <constraint firstItem="deG-wC-Czg" firstAttribute="top" secondItem="vvn-TQ-3JG" secondAttribute="bottom" id="GOM-mq-mIJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ffp-vC-TO1" secondAttribute="bottom" constant="235" id="GXn-3c-Gc8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eHn-Il-01E" secondAttribute="trailing" constant="145" id="JwQ-dV-0V3"/>
                             <constraint firstItem="0W4-aL-5eD" firstAttribute="top" secondItem="Ffp-vC-TO1" secondAttribute="bottom" constant="87" id="OXX-sv-WUh"/>
@@ -67,20 +81,28 @@
                             <constraint firstItem="eHn-Il-01E" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="101" id="XFq-Ot-hIm"/>
                             <constraint firstItem="heF-HC-dip" firstAttribute="top" secondItem="eHn-Il-01E" secondAttribute="bottom" constant="12" id="ZFH-Ht-myO"/>
                             <constraint firstAttribute="bottom" secondItem="Jhf-cj-afo" secondAttribute="bottom" id="edh-HB-sGg"/>
+                            <constraint firstItem="vvn-TQ-3JG" firstAttribute="top" secondItem="heF-HC-dip" secondAttribute="bottom" constant="227" id="efU-eS-iQJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vvn-TQ-3JG" secondAttribute="trailing" constant="60" id="h68-LC-sTp"/>
                             <constraint firstAttribute="trailing" secondItem="Ffp-vC-TO1" secondAttribute="trailing" id="jcT-zP-FrD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0W4-aL-5eD" secondAttribute="bottom" constant="109" id="jsm-So-iDP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Tf7-2P-yj1" secondAttribute="bottom" constant="52" id="k1Q-EN-MxM"/>
                             <constraint firstItem="Jhf-cj-afo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kso-o1-POM"/>
+                            <constraint firstItem="deG-wC-Czg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="mtf-JT-sLp"/>
                             <constraint firstItem="eHn-Il-01E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="145" id="oKK-Y8-kGR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="heF-HC-dip" secondAttribute="trailing" constant="87" id="qhe-Ta-x73"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="deG-wC-Czg" secondAttribute="trailing" constant="92" id="xVZ-VH-Qq1"/>
+                            <constraint firstItem="vvn-TQ-3JG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="zjP-cS-9bW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="logInButton" destination="Tf7-2P-yj1" id="AeW-cD-GuO"/>
+                        <outlet property="messageHeaderLabel" destination="vvn-TQ-3JG" id="zxN-Oi-R1N"/>
+                        <outlet property="messageLabel" destination="deG-wC-Czg" id="Mhy-lQ-s6U"/>
                         <outlet property="signUpButton" destination="0W4-aL-5eD" id="CX2-SR-u0R"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="111.59420289855073" y="32.8125"/>
         </scene>
