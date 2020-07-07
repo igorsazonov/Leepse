@@ -10,12 +10,6 @@ import UIKit
 
 class LastScreenViewController: UIViewController {
 
-    @IBAction func logoutInApp(_ sender: Any) {
-        
-    }
-    
-    @IBAction func logoutInAp(_ sender: UIButton) {
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
     }
