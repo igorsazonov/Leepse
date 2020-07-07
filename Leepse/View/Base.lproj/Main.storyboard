@@ -32,16 +32,19 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="layer1" translatesAutoresizingMaskIntoConstraints="NO" id="Jhf-cj-afo">
                                 <rect key="frame" x="0.0" y="714" width="414" height="182"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tf7-2P-yj1">
-                                <rect key="frame" x="145" y="734" width="124" height="64"/>
-                                <state key="normal" title="Button"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0W4-aL-5eD">
                                 <rect key="frame" x="60" y="714" width="294" height="39"/>
-                                <color key="backgroundColor" red="0.95294117649999999" green="0.68627450980000004" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="GET STARTED"/>
                                 <connections>
                                     <action selector="tupSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2MF-Za-LsZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tf7-2P-yj1">
+                                <rect key="frame" x="145" y="761" width="124" height="49"/>
+                                <state key="normal" title="SIGN IN"/>
+                                <connections>
+                                    <action selector="tupLogIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZZm-HO-Oyf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -49,7 +52,7 @@
                         <constraints>
                             <constraint firstItem="Ffp-vC-TO1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-15" id="5Ev-7C-gjd"/>
                             <constraint firstItem="Jhf-cj-afo" firstAttribute="top" secondItem="Ffp-vC-TO1" secondAttribute="bottom" constant="87" id="6Ef-1K-609"/>
-                            <constraint firstItem="Tf7-2P-yj1" firstAttribute="top" secondItem="Ffp-vC-TO1" secondAttribute="bottom" constant="107" id="8yo-ns-VQW"/>
+                            <constraint firstItem="Tf7-2P-yj1" firstAttribute="top" secondItem="Ffp-vC-TO1" secondAttribute="bottom" constant="134" id="8yo-ns-VQW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="heF-HC-dip" secondAttribute="bottom" constant="600" id="9LH-B5-doo"/>
                             <constraint firstItem="Tf7-2P-yj1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="145" id="CYh-wR-Oju"/>
                             <constraint firstItem="0W4-aL-5eD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="EEZ-Og-z6g"/>
@@ -66,7 +69,7 @@
                             <constraint firstAttribute="bottom" secondItem="Jhf-cj-afo" secondAttribute="bottom" id="edh-HB-sGg"/>
                             <constraint firstAttribute="trailing" secondItem="Ffp-vC-TO1" secondAttribute="trailing" id="jcT-zP-FrD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0W4-aL-5eD" secondAttribute="bottom" constant="109" id="jsm-So-iDP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Tf7-2P-yj1" secondAttribute="bottom" constant="64" id="k1Q-EN-MxM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Tf7-2P-yj1" secondAttribute="bottom" constant="52" id="k1Q-EN-MxM"/>
                             <constraint firstItem="Jhf-cj-afo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kso-o1-POM"/>
                             <constraint firstItem="eHn-Il-01E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="145" id="oKK-Y8-kGR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="heF-HC-dip" secondAttribute="trailing" constant="87" id="qhe-Ta-x73"/>
@@ -74,6 +77,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="logInButton" destination="Tf7-2P-yj1" id="AeW-cD-GuO"/>
                         <outlet property="signUpButton" destination="0W4-aL-5eD" id="CX2-SR-u0R"/>
                     </connections>
                 </viewController>
