@@ -19,6 +19,7 @@
 		F7DA996E24B4EA5900972177 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DA996D24B4EA5900972177 /* SignIn.storyboard */; };
 		F7DA997024B4EAAF00972177 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DA996F24B4EAAF00972177 /* SignUp.storyboard */; };
 		F7DA997224B4EC5900972177 /* EnterPhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DA997124B4EC5900972177 /* EnterPhoneNumberViewController.swift */; };
+		F7DA997624B51D6900972177 /* EnterCodeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DA997524B51D6900972177 /* EnterCodeScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		F7DA996D24B4EA5900972177 /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		F7DA996F24B4EAAF00972177 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		F7DA997124B4EC5900972177 /* EnterPhoneNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPhoneNumberViewController.swift; sourceTree = "<group>"; };
+		F7DA997524B51D6900972177 /* EnterCodeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterCodeScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				F7DA997124B4EC5900972177 /* EnterPhoneNumberViewController.swift */,
+				F7DA997524B51D6900972177 /* EnterCodeScreenViewController.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7DA997624B51D6900972177 /* EnterCodeScreenViewController.swift in Sources */,
 				F7AACA2524B4DB1500720458 /* LastScreenViewController.swift in Sources */,
 				F7AACA1F24B4B02500720458 /* FirstScreenViewController.swift in Sources */,
 				F73C91D124B3342400744ACC /* AppDelegate.swift in Sources */,
