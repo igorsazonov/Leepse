@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		91067421CF7B6E2A2E373BFF /* Pods_Leepse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B8BD031A94C16A8ACE43D8 /* Pods_Leepse.framework */; };
 		F73C91D124B3342400744ACC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C91D024B3342400744ACC /* AppDelegate.swift */; };
-		F73C91D324B3342400744ACC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73C91D224B3342400744ACC /* SceneDelegate.swift */; };
 		F73C91D824B3342400744ACC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73C91D624B3342400744ACC /* Main.storyboard */; };
 		F73C91DA24B3342800744ACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F73C91D924B3342800744ACC /* Assets.xcassets */; };
 		F73C91DD24B3342800744ACC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73C91DB24B3342800744ACC /* LaunchScreen.storyboard */; };
@@ -28,7 +27,6 @@
 		CAD58EBA8FFA3CD002E9D649 /* Pods-Leepse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leepse.debug.xcconfig"; path = "Target Support Files/Pods-Leepse/Pods-Leepse.debug.xcconfig"; sourceTree = "<group>"; };
 		F73C91CD24B3342400744ACC /* Leepse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Leepse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F73C91D024B3342400744ACC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F73C91D224B3342400744ACC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F73C91D724B3342400744ACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F73C91D924B3342800744ACC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F73C91DC24B3342800744ACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -105,7 +103,6 @@
 			isa = PBXGroup;
 			children = (
 				F73C91D024B3342400744ACC /* AppDelegate.swift */,
-				F73C91D224B3342400744ACC /* SceneDelegate.swift */,
 				F73C91DB24B3342800744ACC /* LaunchScreen.storyboard */,
 				F73C91D924B3342800744ACC /* Assets.xcassets */,
 			);
@@ -164,8 +161,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F73C91E124B3342800744ACC /* Build configuration list for PBXNativeTarget "Leepse" */;
 			buildPhases = (
-				F7AACA1C24B478DB00720458 /* Run Script */,
 				CFBF66957BE9A5D8CFBC1011 /* [CP] Check Pods Manifest.lock */,
+				F7AACA1C24B478DB00720458 /* Run Script */,
 				F73C91C924B3342400744ACC /* Sources */,
 				F73C91CA24B3342400744ACC /* Frameworks */,
 				F73C91CB24B3342400744ACC /* Resources */,
@@ -281,7 +278,6 @@
 				F7AACA1F24B4B02500720458 /* FirstScreenViewController.swift in Sources */,
 				F73C91D124B3342400744ACC /* AppDelegate.swift in Sources */,
 				F7DA997224B4EC5900972177 /* EnterPhoneNumberViewController.swift in Sources */,
-				F73C91D324B3342400744ACC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +425,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F65YYAQSG7;
 				INFOPLIST_FILE = Leepse/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,6 +445,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F65YYAQSG7;
 				INFOPLIST_FILE = Leepse/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
