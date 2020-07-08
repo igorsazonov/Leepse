@@ -35,13 +35,14 @@
                                 <state key="normal" title="GET STARTED"/>
                                 <connections>
                                     <action selector="signUpButtounTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2MF-Za-LsZ"/>
+                                    <segue destination="5XO-jY-kPo" kind="push" id="Fir-0h-ASf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tf7-2P-yj1">
                                 <rect key="frame" x="145" y="673" width="124" height="49"/>
                                 <state key="normal" title="SIGN IN"/>
                                 <connections>
-                                    <action selector="logInButtounTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZZm-HO-Oyf"/>
+                                    <segue destination="FSR-4r-W3X" kind="push" id="M6j-7a-ixA"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvn-TQ-3JG">
@@ -106,6 +107,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1931.8840579710147" y="32.8125"/>
+        </scene>
+        <!--SignUp-->
+        <scene sceneID="rCp-S1-eFD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignUp" id="5XO-jY-kPo" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="EY8-H5-9Rp"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sqo-T9-PEn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2595" y="42"/>
+        </scene>
+        <!--SignIn-->
+        <scene sceneID="xvP-AM-KYL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignIn" id="FSR-4r-W3X" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="VcK-Xh-qbA"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k5H-Iz-gsI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2591" y="85"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="j4w-Y5-Vg2">

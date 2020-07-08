@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wzu-TJ-t0z">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -56,6 +57,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IwD-vR-VDv">
                                 <rect key="frame" x="122" y="400" width="170" height="30"/>
                                 <state key="normal" title="SUBMIT"/>
+                                <connections>
+                                    <segue destination="4bm-qo-uab" kind="push" id="bYp-eQ-CNm"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Please enter your phone number" textAlignment="center" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="qDj-OT-bxc">
                                 <rect key="frame" x="122" y="269" width="248" height="98"/>
@@ -117,46 +121,31 @@
             <objects>
                 <viewController id="4bm-qo-uab" customClass="EnterCodeScreenViewController" customModule="Leepse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pdo-FO-gd5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo (1)" translatesAutoresizingMaskIntoConstraints="NO" id="na1-Uu-Ieg">
-                                <rect key="frame" x="87" y="153" width="240" height="68"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="logo (1)" translatesAutoresizingMaskIntoConstraints="NO" id="na1-Uu-Ieg">
+                                <rect key="frame" x="87" y="97" width="240" height="68"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJK-qo-7FI">
-                                <rect key="frame" x="117" y="245" width="180" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="llW-XM-fxX">
-                                <rect key="frame" x="20" y="57" width="38" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="backButton"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="HQy-dr-WFK" firstAttribute="trailing" secondItem="CJK-qo-7FI" secondAttribute="trailing" constant="117" id="1Dg-RP-5j3"/>
-                            <constraint firstItem="HQy-dr-WFK" firstAttribute="bottom" secondItem="CJK-qo-7FI" secondAttribute="bottom" constant="569" id="AnS-6C-0QV"/>
-                            <constraint firstItem="na1-Uu-Ieg" firstAttribute="top" secondItem="HQy-dr-WFK" secondAttribute="top" constant="109" id="Btk-Pe-8uL"/>
-                            <constraint firstItem="HQy-dr-WFK" firstAttribute="bottom" secondItem="na1-Uu-Ieg" secondAttribute="bottom" constant="641" id="NUZ-GY-fya"/>
-                            <constraint firstItem="na1-Uu-Ieg" firstAttribute="leading" secondItem="HQy-dr-WFK" secondAttribute="leading" constant="87" id="b7b-Dm-Yur"/>
-                            <constraint firstItem="CJK-qo-7FI" firstAttribute="top" secondItem="na1-Uu-Ieg" secondAttribute="bottom" constant="24" id="gR2-pN-Ies"/>
-                            <constraint firstItem="HQy-dr-WFK" firstAttribute="trailing" secondItem="na1-Uu-Ieg" secondAttribute="trailing" constant="87" id="nXy-ik-xaR"/>
-                            <constraint firstItem="CJK-qo-7FI" firstAttribute="leading" secondItem="HQy-dr-WFK" secondAttribute="leading" constant="117" id="v0t-mX-75x"/>
+                            <constraint firstItem="na1-Uu-Ieg" firstAttribute="leading" secondItem="HQy-dr-WFK" secondAttribute="leading" constant="87" id="Je5-z2-Pmh"/>
+                            <constraint firstItem="na1-Uu-Ieg" firstAttribute="top" secondItem="HQy-dr-WFK" secondAttribute="top" constant="97" id="KkX-53-wLe"/>
+                            <constraint firstItem="HQy-dr-WFK" firstAttribute="bottom" secondItem="na1-Uu-Ieg" secondAttribute="bottom" constant="643" id="Zd1-XF-4OH"/>
+                            <constraint firstItem="na1-Uu-Ieg" firstAttribute="centerX" secondItem="pdo-FO-gd5" secondAttribute="centerX" id="p3C-tU-XCf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HQy-dr-WFK"/>
                     </view>
+                    <navigationItem key="navigationItem" id="bGj-8E-hBm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lnq-eh-NP2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3431.884057971015" y="95.758928571428569"/>
+            <point key="canvasLocation" x="3595.652173913044" y="95.758928571428569"/>
         </scene>
     </scenes>
     <resources>
         <image name="USA" width="48" height="48"/>
-        <image name="backButton" width="24" height="24"/>
         <image name="logo (1)" width="129.5" height="53.5"/>
     </resources>
 </document>
