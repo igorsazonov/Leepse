@@ -14,11 +14,7 @@ class EnterPhoneNumberViewController: UIViewController {
     
     @IBOutlet weak var submitButton: UIButton!
     
-    @IBAction func backToFirstScreen(_ sender: UIButton) {
-        
-    }
-    
-    @IBAction func goToEnterCodeScreen(_ sender: UIButton) {
+    @IBAction func tappedSubmit(_ sender: UIButton) {
         
     }
     

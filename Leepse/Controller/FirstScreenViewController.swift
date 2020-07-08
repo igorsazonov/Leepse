@@ -12,13 +12,13 @@ class FirstScreenViewController: UIViewController {
 
     @IBOutlet weak var signUpButton: UIButton!
     
-    @IBAction func tupSignUp(_ sender: UIButton) {
+    @IBAction func signUpButtounTapped(_ sender: UIButton) {
     
     }
     
     @IBOutlet weak var logInButton: UIButton!
     
-    @IBAction func tupLogIn(_ sender: UIButton) {
+    @IBAction func logInButtounTapped(_ sender: UIButton) {
         let signInViewController = (UIStoryboard(name: "SignIn", bundle: Bundle.main).instantiateViewController(withIdentifier: "EnterPhoneVc") as? EnterPhoneNumberViewController)!
         navigationController?.pushViewController(signInViewController, animated: true)
     }
