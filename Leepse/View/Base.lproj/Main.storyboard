@@ -34,14 +34,14 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="GET STARTED"/>
                                 <connections>
-                                    <segue destination="5XO-jY-kPo" kind="push" id="Fir-0h-ASf"/>
+                                    <segue destination="5XO-jY-kPo" kind="show" id="LXQ-WB-0bS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tf7-2P-yj1">
                                 <rect key="frame" x="145" y="673" width="124" height="49"/>
                                 <state key="normal" title="SIGN IN"/>
                                 <connections>
-                                    <segue destination="FSR-4r-W3X" kind="push" id="M6j-7a-ixA"/>
+                                    <segue destination="FSR-4r-W3X" kind="show" id="MBX-tK-PM4"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvn-TQ-3JG">

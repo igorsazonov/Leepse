@@ -8,38 +8,31 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--User Name View Controller-->
         <scene sceneID="xIb-S8-wv0">
             <objects>
-                <viewController id="Rwu-Ce-mvq" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserNameVс" id="Rwu-Ce-mvq" customClass="UserNameViewController" customModule="Leepse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ati-Ix-xt2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo (1)" translatesAutoresizingMaskIntoConstraints="NO" id="nx3-ys-BkB">
-                                <rect key="frame" x="87" y="128" width="240" height="54"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="54" id="Dvj-UF-W5s"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo (1)" translatesAutoresizingMaskIntoConstraints="NO" id="0jk-sn-nxV">
+                                <rect key="frame" x="87" y="130" width="240.5" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="pha-ka-Jmb" firstAttribute="trailing" secondItem="nx3-ys-BkB" secondAttribute="trailing" constant="87" id="1fB-Bj-Mxr"/>
-                            <constraint firstItem="nx3-ys-BkB" firstAttribute="top" secondItem="pha-ka-Jmb" secondAttribute="top" constant="84" id="9mx-is-UGL"/>
-                            <constraint firstItem="nx3-ys-BkB" firstAttribute="leading" secondItem="pha-ka-Jmb" secondAttribute="leading" constant="87" id="G1S-rG-5fZ"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="pha-ka-Jmb"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qXr-Oo-aCx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="120.53571428571428"/>
+            <point key="canvasLocation" x="-188" y="81"/>
         </scene>
-        <!--View Controller-->
+        <!--Phone Number Sign Up View Controller-->
         <scene sceneID="TYX-83-KEe">
             <objects>
-                <viewController id="Wdl-8m-9ZC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PhoneNumberSignUpVc" id="Wdl-8m-9ZC" customClass="PhoneNumberSignUpViewController" customModule="Leepse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FUW-Qj-CBc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,12 +42,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ov2-Pv-IxM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="904" y="121"/>
+            <point key="canvasLocation" x="620" y="80"/>
         </scene>
-        <!--View Controller-->
+        <!--Enter Code Sign Up View Controller-->
         <scene sceneID="eE2-98-Xbj">
             <objects>
-                <viewController id="xEc-Wn-kr3" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CodeSignUpVc" id="xEc-Wn-kr3" customClass="EnterCodeSignUpViewController" customModule="Leepse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F4b-JM-1zk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,7 +57,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OOc-nA-pFL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1694" y="121"/>
+            <point key="canvasLocation" x="1545" y="80"/>
         </scene>
     </scenes>
     <resources>

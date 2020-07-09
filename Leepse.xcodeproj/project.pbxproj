@@ -12,6 +12,9 @@
 		F73C91D824B3342400744ACC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73C91D624B3342400744ACC /* Main.storyboard */; };
 		F73C91DA24B3342800744ACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F73C91D924B3342800744ACC /* Assets.xcassets */; };
 		F73C91DD24B3342800744ACC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73C91DB24B3342800744ACC /* LaunchScreen.storyboard */; };
+		F7830B1224B6E77200117599 /* UserNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7830B1124B6E77200117599 /* UserNameViewController.swift */; };
+		F7830B1424B6E7C300117599 /* EnterCodeSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7830B1324B6E7C300117599 /* EnterCodeSignUpViewController.swift */; };
+		F7830B1624B6E83B00117599 /* PhoneNumberSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7830B1524B6E83B00117599 /* PhoneNumberSignUpViewController.swift */; };
 		F7AACA1F24B4B02500720458 /* FirstScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AACA1E24B4B02500720458 /* FirstScreenViewController.swift */; };
 		F7AACA2324B4DAEE00720458 /* Last.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7AACA2224B4DAEE00720458 /* Last.storyboard */; };
 		F7AACA2524B4DB1500720458 /* LastScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AACA2424B4DB1500720458 /* LastScreenViewController.swift */; };
@@ -31,6 +34,9 @@
 		F73C91D924B3342800744ACC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F73C91DC24B3342800744ACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F73C91DE24B3342800744ACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7830B1124B6E77200117599 /* UserNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNameViewController.swift; sourceTree = "<group>"; };
+		F7830B1324B6E7C300117599 /* EnterCodeSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterCodeSignUpViewController.swift; sourceTree = "<group>"; };
+		F7830B1524B6E83B00117599 /* PhoneNumberSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberSignUpViewController.swift; sourceTree = "<group>"; };
 		F7AACA1E24B4B02500720458 /* FirstScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenViewController.swift; sourceTree = "<group>"; };
 		F7AACA2224B4DAEE00720458 /* Last.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Last.storyboard; sourceTree = "<group>"; };
 		F7AACA2424B4DB1500720458 /* LastScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastScreenViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +156,9 @@
 		F7DA996824B4E8E600972177 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				F7830B1124B6E77200117599 /* UserNameViewController.swift */,
+				F7830B1524B6E83B00117599 /* PhoneNumberSignUpViewController.swift */,
+				F7830B1324B6E7C300117599 /* EnterCodeSignUpViewController.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -273,10 +282,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7830B1624B6E83B00117599 /* PhoneNumberSignUpViewController.swift in Sources */,
 				F7DA997624B51D6900972177 /* EnterCodeScreenViewController.swift in Sources */,
 				F7AACA2524B4DB1500720458 /* LastScreenViewController.swift in Sources */,
 				F7AACA1F24B4B02500720458 /* FirstScreenViewController.swift in Sources */,
 				F73C91D124B3342400744ACC /* AppDelegate.swift in Sources */,
+				F7830B1224B6E77200117599 /* UserNameViewController.swift in Sources */,
+				F7830B1424B6E7C300117599 /* EnterCodeSignUpViewController.swift in Sources */,
 				F7DA997224B4EC5900972177 /* EnterPhoneNumberViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
