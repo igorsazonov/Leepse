@@ -12,6 +12,8 @@ class EnterPhoneNumberViewController: UIViewController {
 
     @IBOutlet weak var messageLabel: UILabel!
     
+    @IBOutlet weak var phoneNumberTextField: UITextField!
+    
     @IBOutlet weak var submitButton: UIButton!
     
     @IBAction func tappedSubmit(_ sender: UIButton) {
@@ -19,12 +21,19 @@ class EnterPhoneNumberViewController: UIViewController {
         navigationController?.pushViewController(enterCodeScreenViewController, animated: true)
     }
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        configuringTheNavigationBar()
         configuringTheButton()
         configuringTheLabel()
+    }
+    
+    func configuringTheNavigationBar() {
+        navigationController?.navigationBar.setValue(true, forKey: "hidesShadow")
+        navigationController?.navigationBar.backIndicatorImage = UIImage(named: "backButton")
+        navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "backButton")
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        navigationItem.backBarButtonItem?.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
     }
     
     func configuringTheButton() {
