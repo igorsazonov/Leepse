@@ -34,7 +34,7 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="GET STARTED"/>
                                 <connections>
-                                    <segue destination="5XO-jY-kPo" kind="show" id="LXQ-WB-0bS"/>
+                                    <segue destination="5XO-jY-kPo" kind="show" id="Rmw-uV-AcJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tf7-2P-yj1">

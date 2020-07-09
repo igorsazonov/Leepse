@@ -18,14 +18,13 @@ class EnterCodeScreenViewController: UIViewController {
     
     @IBAction func tappedSubmit(_ sender: UIButton) {
         let lastScreenViewController =  UIStoryboard(name: "Last", bundle: Bundle.main).instantiateViewController(withIdentifier: "lastVc") as! LastScreenViewController
-        navigationController?.pushViewController(lastScreenViewController, animated: true)
+        navigationController?.setViewControllers([lastScreenViewController], animated: true)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configuringTheNavigationBar()
         configuringTheLabelAndButton()
-        
     }
     
     func configuringTheLabelAndButton() {
@@ -36,7 +35,6 @@ class EnterCodeScreenViewController: UIViewController {
     }
     
     func configuringTheNavigationBar() {
-        navigationController?.navigationBar.backIndicatorImage = UIImage(named: "backButton")
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         navigationItem.backBarButtonItem?.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
     }

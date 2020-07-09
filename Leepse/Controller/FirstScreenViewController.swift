@@ -27,11 +27,8 @@ class FirstScreenViewController: UIViewController {
     
     func configuringTheNavigationBar() {
         navigationController?.navigationBar.setValue(true, forKey: "hidesShadow")
-        navigationController?.navigationBar.backIndicatorImage = UIImage(named: "backButton")
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         navigationItem.backBarButtonItem?.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        
-        //navigationController?.navigationBar.In
      }
     
     func settingUpTheViewButtons() {

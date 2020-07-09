@@ -29,7 +29,6 @@ class EnterPhoneNumberViewController: UIViewController {
     }
     
     func configuringTheNavigationBar() {
-        navigationController?.navigationBar.backIndicatorImage = UIImage(named: "backButton")
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         navigationItem.backBarButtonItem?.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
     }
