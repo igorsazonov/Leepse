@@ -16,12 +16,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo (1)" translatesAutoresizingMaskIntoConstraints="NO" id="nx3-ys-BkB">
-                                <rect key="frame" x="87" y="112" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo (1)" translatesAutoresizingMaskIntoConstraints="NO" id="nx3-ys-BkB">
+                                <rect key="frame" x="87" y="128" width="240" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="Dvj-UF-W5s"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pha-ka-Jmb" firstAttribute="trailing" secondItem="nx3-ys-BkB" secondAttribute="trailing" constant="87" id="1fB-Bj-Mxr"/>
+                            <constraint firstItem="nx3-ys-BkB" firstAttribute="top" secondItem="pha-ka-Jmb" secondAttribute="top" constant="84" id="9mx-is-UGL"/>
+                            <constraint firstItem="nx3-ys-BkB" firstAttribute="leading" secondItem="pha-ka-Jmb" secondAttribute="leading" constant="87" id="G1S-rG-5fZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="pha-ka-Jmb"/>
                     </view>
                 </viewController>

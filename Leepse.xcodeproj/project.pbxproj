@@ -120,8 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				F73C91D624B3342400744ACC /* Main.storyboard */,
-				F7DA996F24B4EAAF00972177 /* SignUp.storyboard */,
 				F7DA996D24B4EA5900972177 /* SignIn.storyboard */,
+				F7DA996F24B4EAAF00972177 /* SignUp.storyboard */,
 				F7AACA2224B4DAEE00720458 /* Last.storyboard */,
 			);
 			path = View;
