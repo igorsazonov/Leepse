@@ -61,7 +61,7 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="SUBMIT"/>
                                 <connections>
-                                    <action selector="tappedSubmit:" destination="Wzu-TJ-t0z" eventType="touchUpInside" id="5uJ-SZ-PSY"/>
+                                    <action selector="tappedSubmit:" destination="Wzu-TJ-t0z" eventType="touchUpInside" id="rTa-Rb-Boz"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Please enter your phone number" textAlignment="center" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="qDj-OT-bxc">
@@ -76,14 +76,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="fP1-9V-231"/>
                     <connections>
-                        <outlet property="messageLabel" destination="BvX-rc-UGN" id="tZp-ew-Ine"/>
-                        <outlet property="phoneNumberTextField" destination="qDj-OT-bxc" id="bua-c5-XMB"/>
-                        <outlet property="submitButton" destination="IwD-vR-VDv" id="pfX-Fw-jvc"/>
+                        <outlet property="messageLabel" destination="BvX-rc-UGN" id="Csm-Nk-56d"/>
+                        <outlet property="phoneNumberTextField" destination="qDj-OT-bxc" id="dSH-ih-X7e"/>
+                        <outlet property="submitButton" destination="IwD-vR-VDv" id="Vra-W5-Yj8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VFD-QX-C7c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2398.5507246376815" y="20.758928571428569"/>
+            <point key="canvasLocation" x="2484" y="21"/>
         </scene>
         <!--Enter Code Screen View Controller-->
         <scene sceneID="0NV-xo-JmU">
@@ -131,7 +131,7 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="SUBMIT"/>
                                 <connections>
-                                    <action selector="tappedSubmit:" destination="4bm-qo-uab" eventType="touchUpInside" id="1Yr-gu-Vug"/>
+                                    <action selector="tappedSubmit:" destination="4bm-qo-uab" eventType="touchUpInside" id="1sU-Zm-gEC"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S2w-9X-PSG">
@@ -154,20 +154,26 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.97647058819999999" green="0.71764705880000002" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UdI-iC-M0U">
+                                <rect key="frame" x="45" y="299" width="331" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="HQy-dr-WFK"/>
                     </view>
                     <navigationItem key="navigationItem" id="bGj-8E-hBm"/>
                     <connections>
-                        <outlet property="errorMessage" destination="Zaf-P1-cBt" id="VWe-n1-GJ3"/>
-                        <outlet property="phoneNumberLabel" destination="Vb6-6Q-TUb" id="wqs-jX-ggz"/>
-                        <outlet property="submitButton" destination="xuk-xS-UUS" id="EgT-xt-p4a"/>
+                        <outlet property="errorMessage" destination="Zaf-P1-cBt" id="ozm-CA-C2H"/>
+                        <outlet property="phoneNumberLabel" destination="Vb6-6Q-TUb" id="FS7-ct-Kvs"/>
+                        <outlet property="submitButton" destination="xuk-xS-UUS" id="C2y-YU-LEE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lnq-eh-NP2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3222" y="21"/>
+            <point key="canvasLocation" x="3215.9420289855075" y="20.758928571428569"/>
         </scene>
     </scenes>
     <resources>

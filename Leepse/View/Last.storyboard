@@ -66,7 +66,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KPZ-qf-YxD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="1Er-dE-iPD" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-971.01449275362324" y="109.82142857142857"/>
+            <point key="canvasLocation" x="-497" y="92"/>
         </scene>
     </scenes>
     <resources>
