@@ -154,10 +154,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.97647058819999999" green="0.71764705880000002" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UdI-iC-M0U">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UdI-iC-M0U">
                                 <rect key="frame" x="45" y="299" width="331" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.97647058823529409" green="0.71764705882352942" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
@@ -166,6 +167,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="bGj-8E-hBm"/>
                     <connections>
+                        <outlet property="codeTextField" destination="UdI-iC-M0U" id="yoc-Dl-0s7"/>
                         <outlet property="errorMessage" destination="Zaf-P1-cBt" id="ozm-CA-C2H"/>
                         <outlet property="phoneNumberLabel" destination="Vb6-6Q-TUb" id="FS7-ct-Kvs"/>
                         <outlet property="submitButton" destination="xuk-xS-UUS" id="C2y-YU-LEE"/>

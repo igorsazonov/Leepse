@@ -16,6 +16,8 @@ class EnterCodeScreenViewController: UIViewController {
     
     @IBOutlet weak var submitButton: UIButton!
     
+    @IBOutlet weak var codeTextField: UITextField!
+    
     @IBAction func tappedSubmit(_ sender: UIButton) {
         let lastScreenViewController =  UIStoryboard(name: "Last", bundle: Bundle.main).instantiateViewController(withIdentifier: "lastVc") as! LastScreenViewController
         navigationController?.setViewControllers([lastScreenViewController], animated: true)
@@ -25,6 +27,7 @@ class EnterCodeScreenViewController: UIViewController {
         super.viewDidLoad()
         configuringTheNavigationBar()
         configuringTheLabelAndButton()
+        codeTextField.defaultTextAttributes.updateValue(50.0, forKey: NSAttributedString.Key.kern)
     }
     
     func configuringTheLabelAndButton() {
