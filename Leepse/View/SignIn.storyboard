@@ -130,6 +130,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="SUBMIT"/>
+                                <connections>
+                                    <action selector="tappedSubmit:" destination="4bm-qo-uab" eventType="touchUpInside" id="1Yr-gu-Vug"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S2w-9X-PSG">
                                 <rect key="frame" x="132" y="341" width="60" height="1"/>
@@ -164,7 +167,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lnq-eh-NP2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3149" y="21"/>
+            <point key="canvasLocation" x="3222" y="21"/>
         </scene>
     </scenes>
     <resources>

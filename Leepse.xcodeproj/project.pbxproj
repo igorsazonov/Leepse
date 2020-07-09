@@ -136,10 +136,10 @@
 		F7AACA1D24B4A84700720458 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F7DA996724B4E8DA00972177 /* SignIn */,
-				F7DA996824B4E8E600972177 /* SignUp */,
 				F7AACA1E24B4B02500720458 /* FirstScreenViewController.swift */,
 				F7AACA2424B4DB1500720458 /* LastScreenViewController.swift */,
+				F7DA996724B4E8DA00972177 /* SignIn */,
+				F7DA996824B4E8E600972177 /* SignUp */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
