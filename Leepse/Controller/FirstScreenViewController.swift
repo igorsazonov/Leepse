@@ -20,25 +20,25 @@ class FirstScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configuringTheNavigationBar()
-        settingUpTheViewButtons()
-        configuringTheLabel()
+        setupTheNavigationBar()
+        setupButton()
+        setupLabel()
     }
     
-    func configuringTheNavigationBar() {
+    func setupTheNavigationBar() {
         navigationController?.navigationBar.setValue(true, forKey: "hidesShadow")
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         navigationItem.backBarButtonItem?.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
      }
     
-    func settingUpTheViewButtons() {
+    func setupButton() {
         signUpButton.layer.cornerRadius = 16.7
         signUpButton.tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         signUpButton.backgroundColor = #colorLiteral(red: 0.9764705882, green: 0.7176470588, blue: 0.3921568627, alpha: 1)
         logInButton.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
     }
     
-    func configuringTheLabel() {
+    func setupLabel() {
         messageHeaderLabel.text = "A smart forum"
         messageLabel.text = "where you decide who can reply to your posts, and who can't"
     }

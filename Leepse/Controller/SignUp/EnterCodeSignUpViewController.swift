@@ -18,17 +18,17 @@ class EnterCodeSignUpViewController: UIViewController {
     
     @IBOutlet weak var messageLabel: UILabel!
     
-    @IBAction func tappedSubmit(_ sender: UIButton) {
-        transitionToViewController()
+    @IBAction func submitTapped(_ sender: UIButton) {
+        gotoLastScreenViewController()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        customLabelAndButton()
+        setupLabelAndButton()
         codeTextField.defaultTextAttributes.updateValue(50.0, forKey: NSAttributedString.Key.kern)
     }
     
-    func customLabelAndButton() {
+    func setupLabelAndButton() {
         numberLabel.text = ""
         messageLabel.text = "message"
         submitButton.layer.cornerRadius = 16.7
@@ -36,7 +36,7 @@ class EnterCodeSignUpViewController: UIViewController {
         submitButton.backgroundColor = #colorLiteral(red: 0.9764705882, green: 0.7176470588, blue: 0.3921568627, alpha: 1)
     }
     
-    func transitionToViewController() {
+    func gotoLastScreenViewController() {
         let lastScreenViewController = UIStoryboard(name: "Last", bundle: .main).instantiateViewController(withIdentifier: "lastVc") as! LastScreenViewController
         navigationController?.setViewControllers([lastScreenViewController], animated: true)
     }

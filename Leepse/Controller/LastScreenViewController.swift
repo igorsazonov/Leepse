@@ -10,9 +10,8 @@ import UIKit
 
 class LastScreenViewController: UIViewController {
 
-    @IBAction func tappedLogout(_ sender: UIButton) {
-        let firstScreenViewController = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "FirstVc")
-        navigationController?.setViewControllers([firstScreenViewController], animated: true)
+    @IBAction func logoutTapped(_ sender: UIButton) {
+        gotoFirstScreenViewController()
     }
     
     @IBOutlet weak var logoutButton: UIButton!
@@ -21,14 +20,18 @@ class LastScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        customNavigationBarItems()
+        setupNavigationBarItems()
     }
     
-    func customNavigationBarItems() {
+    func gotoFirstScreenViewController() {
+        let firstScreenViewController = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "FirstVc")
+        navigationController?.setViewControllers([firstScreenViewController], animated: true)
+    }
+    
+    func setupNavigationBarItems() {
         let titleImageView = UIImageView(image: #imageLiteral(resourceName: "logo (1)"))
         titleImageView.contentMode = .scaleAspectFit
         navigationItem.titleView = titleImageView
-        
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: logoutButton)
     }
 }

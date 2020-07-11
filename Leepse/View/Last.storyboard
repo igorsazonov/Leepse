@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,11 +11,11 @@
             <objects>
                 <viewController storyboardIdentifier="lastVc" id="Q53-4T-A8T" customClass="LastScreenViewController" customModule="Leepse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7dM-Af-chO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="layer1" translatesAutoresizingMaskIntoConstraints="NO" id="yNk-T6-4oG">
-                                <rect key="frame" x="0.0" y="736" width="231" height="160"/>
+                                <rect key="frame" x="0.0" y="474" width="417" height="160"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="160" id="exs-t8-GZF"/>
                                 </constraints>
@@ -32,7 +30,7 @@
                                 <connections>
                                     <action selector="funcLogout:" destination="1Er-dE-iPD" eventType="touchUpInside" id="KSM-VT-zUq"/>
                                     <action selector="logoutInAp:" destination="1Er-dE-iPD" eventType="touchDragExit" id="14M-OO-h5m"/>
-                                    <action selector="tappedLogout:" destination="Q53-4T-A8T" eventType="touchUpInside" id="gGA-ZR-tYi"/>
+                                    <action selector="logoutTapped:" destination="Q53-4T-A8T" eventType="touchUpInside" id="gGA-ZR-tYi"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGW-MB-ksq">

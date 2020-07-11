@@ -16,23 +16,27 @@ class UserNameViewController: UIViewController {
     
     @IBOutlet weak var submitButton: UIButton!
     
-    @IBAction func tappedSubmit(_ sender: UIButton) {
-        let phoneNumberSignUpViewController = UIStoryboard(name: "SignUp", bundle: .main).instantiateViewController(withIdentifier: "PhoneNumberSignUpVc") as! PhoneNumberSignUpViewController
-        navigationController?.pushViewController(phoneNumberSignUpViewController, animated: true)
+    @IBAction func submitTapped(_ sender: UIButton) {
+        gotoPhoneNumberSignUpViewController()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configuringTheNavigationBar()
-        customLabelAndButton()
+        setupNavigationBar()
+        setupLabelAndButton()
     }
     
-    func configuringTheNavigationBar() {
+    func gotoPhoneNumberSignUpViewController() {
+        let phoneNumberSignUpViewController = UIStoryboard(name: "SignUp", bundle: .main).instantiateViewController(withIdentifier: "PhoneNumberSignUpVc") as! PhoneNumberSignUpViewController
+        navigationController?.pushViewController(phoneNumberSignUpViewController, animated: true)
+    }
+    
+    func setupNavigationBar() {
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         navigationItem.backBarButtonItem?.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
     }
     
-    func customLabelAndButton() {
+    func setupLabelAndButton() {
         messageLabel.text = ""
         submitButton.layer.cornerRadius = 16.7
         submitButton.tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
