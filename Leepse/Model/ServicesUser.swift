@@ -1,16 +1,16 @@
 //
-//  SignUpUser.swift
+//  ServicesUser.swift
 //  Leepse
 //
-//  Created by Игорь Сазонов on 10.07.2020.
+//  Created by Игорь Сазонов on 11.07.2020.
 //  Copyright © 2020 Игорь Сазонов. All rights reserved.
 //
 
 import Foundation
 
-class Response {
+class ServicesUser {
     
-    func registationPhoneNumber(phone: NumberPhone) {
+    func registationPhoneNumber(phone: NumberPhone, statucCode: @escaping (Int) -> Void, errorHandler: @escaping (Error?) -> Void) {
         guard let url = URL(string: "https://leepse.jetruby.cloud/api/v2/phone_verifications/sign_up") else { return }
         let newPhone = phone
         var request = URLRequest(url: url)
@@ -19,16 +19,11 @@ class Response {
         let jsonData = try? JSONEncoder().encode(newPhone)
         request.httpBody = jsonData
         
-        let task = URLSession.shared.dataTask(with: request) { ( data, response, error) in
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             if let response = response as? HTTPURLResponse {
-                switch  response.statusCode {
-                case 200..<300:
-                    print("Succes")
-                    // сделать вывод сообщения на экран Usera
-                default:
-                    print("Status: \(response.statusCode)")
-                }
+                statucCode(response.statusCode)
             }
+            errorHandler(error)
         }
         task.resume()
     }
@@ -42,7 +37,7 @@ class Response {
         let jsonData = try? JSONEncoder().encode(newUser)
         request.httpBody = jsonData
         
-        let task = URLSession.shared.dataTask(with: request) { ( data, response, error) in
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             if let response = response as? HTTPURLResponse {
                 switch  response.statusCode {
                 case 200..<300:
