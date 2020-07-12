@@ -67,6 +67,6 @@ class EnterCodeSignUpViewController: UIViewController {
     
     func gotoLastScreenViewController() {
         let lastScreenViewController = UIStoryboard(name: "Last", bundle: .main).instantiateViewController(withIdentifier: "lastVc") as! LastScreenViewController
-        navigationController?.setViewControllers([lastScreenViewController], animated: true)
+        self.navigationController?.setViewControllers([lastScreenViewController], animated: true)
     }
 }

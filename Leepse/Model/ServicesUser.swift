@@ -10,6 +10,8 @@ import Foundation
 
 class ServicesUser {
     
+    // MARK: - Registation User
+    
     func registationPhoneNumber(phone: NumberPhone, responseHandler: @escaping (HTTPURLResponse) -> Void) {
         guard let url = URL(string: "https://leepse.jetruby.cloud/api/v2/phone_verifications/sign_up") else { return }
         let newPhone = phone
@@ -29,7 +31,7 @@ class ServicesUser {
     }
     
     func registationUser(user: UserSignUp, responseHandler: @escaping (HTTPURLResponse) -> Void, userHandler: @escaping (UserResponse) -> Void, errorHandler: @escaping (ResponseError) -> Void) {
-        guard let url = URL(string: "https://leepse.jetruby.cloud/apiv2/registrations") else { return }
+        guard let url = URL(string: "https://leepse.jetruby.cloud/api/v2/registrations") else { return }
         let newUser = user
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
@@ -60,4 +62,7 @@ class ServicesUser {
         }
         task.resume()
     }
+    
+    // MARK: - SignIn User
+    
 }
