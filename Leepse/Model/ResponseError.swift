@@ -1,5 +1,5 @@
 //
-//  UserResponse.swift
+//  ResponseError.swift
 //  Leepse
 //
 //  Created by Игорь Сазонов on 12.07.2020.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct UserResponse: Codable {
-    let user: UserRegistered
+struct ResponseError: Codable {
+    let errors: [String]
 }

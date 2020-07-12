@@ -1,5 +1,5 @@
 //
-//  UserResponse.swift
+//  UserRealm.swift
 //  Leepse
 //
 //  Created by Игорь Сазонов on 12.07.2020.
@@ -8,6 +8,3 @@
 
 import Foundation
 
-struct UserResponse: Codable {
-    let user: UserRegistered
-}

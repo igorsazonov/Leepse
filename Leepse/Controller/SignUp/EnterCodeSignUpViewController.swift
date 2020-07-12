@@ -10,6 +10,10 @@ import UIKit
 
 class EnterCodeSignUpViewController: UIViewController {
 
+    let userNameViewController = UserNameViewController()
+    let phoneNumberSignUpViewController = PhoneNumberSignUpViewController()
+    let servicesUser = ServicesUser()
+    
     @IBOutlet weak var submitButton: UIButton!
     
     @IBOutlet weak var codeTextField: UITextField!
@@ -19,7 +23,30 @@ class EnterCodeSignUpViewController: UIViewController {
     @IBOutlet weak var messageLabel: UILabel!
     
     @IBAction func submitTapped(_ sender: UIButton) {
-        gotoLastScreenViewController()
+        if codeTextField.text != "" {
+            registrationUser()
+        } else {
+            messageLabel.text = "Code was not entered. Please enter the code!"
+        }
+    }
+    
+    func registrationUser() {
+        let userName = userNameGlobalVar
+        let phoneNumber = phoneNumberGlobalVar
+        let verificationCode = codeTextField.text ?? ""
+        servicesUser.registationUser(user: UserSignUp(verification_code: verificationCode, phone: Phone(country_code: "7", phone_number: phoneNumber), user: User(username: userName)), responseHandler: { (response) in
+            if response.statusCode >= 200 && response.statusCode < 300 {
+                DispatchQueue.main.async {
+                    self.gotoLastScreenViewController()
+                }
+            }
+        }, userHandler: {(user) in
+            // сохранение в Realm
+        }, errorHandler: { (error) in
+            DispatchQueue.main.async {
+                self.messageLabel.text = error.errors.first // вывод ошибки на экран
+            }
+        })
     }
     
     override func viewDidLoad() {
@@ -29,8 +56,10 @@ class EnterCodeSignUpViewController: UIViewController {
     }
     
     func setupLabelAndButton() {
-        numberLabel.text = ""
-        messageLabel.text = "message"
+        self.numberLabel.text = phoneNumberGlobalVar
+        self.numberLabel.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        messageLabel.text = ""
+        messageLabel.textColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
         submitButton.layer.cornerRadius = 16.7
         submitButton.tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         submitButton.backgroundColor = #colorLiteral(red: 0.9764705882, green: 0.7176470588, blue: 0.3921568627, alpha: 1)

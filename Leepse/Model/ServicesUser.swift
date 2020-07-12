@@ -20,15 +20,15 @@ class ServicesUser {
         request.httpBody = jsonData
         
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
-            print(response)
             if let response = response as? HTTPURLResponse {
+                print(response)
                 responseHandler(response)
             }
         }
         task.resume()
     }
     
-    func registationUser(user: UserSignUp) {
+    func registationUser(user: UserSignUp, responseHandler: @escaping (HTTPURLResponse) -> Void, userHandler: @escaping (UserResponse) -> Void, errorHandler: @escaping (ResponseError) -> Void) {
         guard let url = URL(string: "https://leepse.jetruby.cloud/apiv2/registrations") else { return }
         let newUser = user
         var request = URLRequest(url: url)
@@ -38,13 +38,24 @@ class ServicesUser {
         request.httpBody = jsonData
         
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            guard let data = data else { return }
+            
+            do {
+                let user = try JSONDecoder().decode(UserResponse.self, from: data)
+                userHandler(user)
+            } catch {
+                print(error)
+            }
+            
+            do {
+                let error = try JSONDecoder().decode(ResponseError.self, from: data)
+                errorHandler(error)
+            } catch {
+                
+            }
+            
             if let response = response as? HTTPURLResponse {
-                switch  response.statusCode {
-                case 200..<300:
-                    print("Succes")
-                default:
-                    print("Status: \(response.statusCode)")
-                }
+                responseHandler(response)
             }
         }
         task.resume()

@@ -1,5 +1,5 @@
 //
-//  UserResponse.swift
+//  UserRegistered.swift
 //  Leepse
 //
 //  Created by Игорь Сазонов on 12.07.2020.
@@ -8,6 +8,7 @@
 
 import Foundation
 
-struct UserResponse: Codable {
-    let user: UserRegistered
+struct UserRegistered: Codable {
+    let id: Int
+    let username: String
 }

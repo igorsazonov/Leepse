@@ -7,6 +7,7 @@
 //
 
 import UIKit
+var phoneNumberGlobalVar = ""
 
 class PhoneNumberSignUpViewController: UIViewController {
     
@@ -36,12 +37,13 @@ class PhoneNumberSignUpViewController: UIViewController {
     func registrationPhoneNumber() {
         let countryCode = "7"
         let phoneNumber = phoneNumberTextField.text ?? ""
+        phoneNumberGlobalVar = phoneNumber
         let numberPhone = NumberPhone(phone: Phone(country_code: countryCode, phone_number: phoneNumber))
         servicesUser.registationPhoneNumber(phone: numberPhone, responseHandler: { (response) in
             if response.statusCode >= 200 && response.statusCode < 300 {
                 DispatchQueue.main.async {
-                   // self.messageLabel.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-                   // self.messageLabel.text = "registration phone Number - OK"
+                    self.messageLabel.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+                    self.messageLabel.text = "Phone number is registered!"
                     self.gotoEnterCodeSignUpViewController()
                 }
             } else {
@@ -61,8 +63,8 @@ class PhoneNumberSignUpViewController: UIViewController {
     }
     
     func gotoEnterCodeSignUpViewController() {
-        let enterCodeSignUpViewController = UIStoryboard(name: "SignUp", bundle: .main).instantiateViewController(withIdentifier: "CodeSignUpVc") as! EnterCodeSignUpViewController
-        self.navigationController?.pushViewController(enterCodeSignUpViewController, animated: true)
+        let userNameViewController = UIStoryboard(name: "SignUp", bundle: .main).instantiateViewController(withIdentifier: "UserNameVc") as! UserNameViewController
+        self.navigationController?.pushViewController(userNameViewController, animated: true)
     }
     
     func setupNavigationBar() {

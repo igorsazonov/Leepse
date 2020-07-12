@@ -7,6 +7,7 @@
 //
 
 import UIKit
+var userNameGlobalVar = ""
 
 class UserNameViewController: UIViewController {
 
@@ -27,8 +28,9 @@ class UserNameViewController: UIViewController {
     }
     
     func gotoPhoneNumberSignUpViewController() {
-        let phoneNumberSignUpViewController = UIStoryboard(name: "SignUp", bundle: .main).instantiateViewController(withIdentifier: "PhoneNumberSignUpVc") as! PhoneNumberSignUpViewController
-        navigationController?.pushViewController(phoneNumberSignUpViewController, animated: true)
+        userNameGlobalVar = userNameTextField.text ?? ""
+        let enterCodeSignUpViewController = UIStoryboard(name: "SignUp", bundle: .main).instantiateViewController(withIdentifier: "CodeSignUpVc") as! EnterCodeSignUpViewController
+        self.navigationController?.pushViewController(enterCodeSignUpViewController, animated: true)
     }
     
     func setupNavigationBar() {
