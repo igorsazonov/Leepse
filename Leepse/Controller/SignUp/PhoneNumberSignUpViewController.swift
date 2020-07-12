@@ -11,7 +11,6 @@ import UIKit
 class PhoneNumberSignUpViewController: UIViewController {
     
     let servicesUser = ServicesUser()
-    var messageError = ""
 
     @IBOutlet weak var messageLabel: UILabel!
     
@@ -23,7 +22,7 @@ class PhoneNumberSignUpViewController: UIViewController {
         if phoneNumberTextField.text != "" {
             registrationPhoneNumber()
         } else {
-            messageError = " Enter your phone number!"
+            messageLabel.text = " Enter your phone number!"
         }
     }
     
@@ -37,31 +36,33 @@ class PhoneNumberSignUpViewController: UIViewController {
     func registrationPhoneNumber() {
         let countryCode = "7"
         let phoneNumber = phoneNumberTextField.text ?? ""
-        let numberPhone = NumberPhone(phone: Phone(countryCode: countryCode, phoneNumber: phoneNumber))
-        servicesUser.registationPhoneNumber(phone: numberPhone, statucCode: { (statusCode) in
-            if statusCode >= 200 && statusCode < 300 {
-                print("registration phone Number - OK")
-                self.gotoEnterCodeSignUpViewController()
+        let numberPhone = NumberPhone(phone: Phone(country_code: countryCode, phone_number: phoneNumber))
+        servicesUser.registationPhoneNumber(phone: numberPhone, responseHandler: { (response) in
+            if response.statusCode >= 200 && response.statusCode < 300 {
+                DispatchQueue.main.async {
+                   // self.messageLabel.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+                   // self.messageLabel.text = "registration phone Number - OK"
+                    self.gotoEnterCodeSignUpViewController()
+                }
             } else {
-                self.messageError = "This number is already registered.Sign in at this number or register a new one"
+                DispatchQueue.main.async {
+                    self.messageLabel.text = "This number is already registered.Sign in at this number or register a new one"
+                }
             }
-        }, errorHandler: { (error) in
-            //self.messageError = error?.localizedDescription ?? ""
-            print(error?.localizedDescription ?? "Error")
         })
     }
     
     func setupLabelAndButton() {
-        messageLabel.text = messageError
+        messageLabel.text = ""
         messageLabel.textColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
         submitButton.layer.cornerRadius = 16.7
         submitButton.tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         submitButton.backgroundColor = #colorLiteral(red: 0.9764705882, green: 0.7176470588, blue: 0.3921568627, alpha: 1)
     }
     
-    func  gotoEnterCodeSignUpViewController() {
+    func gotoEnterCodeSignUpViewController() {
         let enterCodeSignUpViewController = UIStoryboard(name: "SignUp", bundle: .main).instantiateViewController(withIdentifier: "CodeSignUpVc") as! EnterCodeSignUpViewController
-        navigationController?.pushViewController(enterCodeSignUpViewController, animated: true)
+        self.navigationController?.pushViewController(enterCodeSignUpViewController, animated: true)
     }
     
     func setupNavigationBar() {

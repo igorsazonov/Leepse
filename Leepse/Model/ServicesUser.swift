@@ -10,7 +10,7 @@ import Foundation
 
 class ServicesUser {
     
-    func registationPhoneNumber(phone: NumberPhone, statucCode: @escaping (Int) -> Void, errorHandler: @escaping (Error?) -> Void) {
+    func registationPhoneNumber(phone: NumberPhone, responseHandler: @escaping (HTTPURLResponse) -> Void) {
         guard let url = URL(string: "https://leepse.jetruby.cloud/api/v2/phone_verifications/sign_up") else { return }
         let newPhone = phone
         var request = URLRequest(url: url)
@@ -20,10 +20,10 @@ class ServicesUser {
         request.httpBody = jsonData
         
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            print(response)
             if let response = response as? HTTPURLResponse {
-                statucCode(response.statusCode)
+                responseHandler(response)
             }
-            errorHandler(error)
         }
         task.resume()
     }

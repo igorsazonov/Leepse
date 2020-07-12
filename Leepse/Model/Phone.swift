@@ -9,6 +9,6 @@
 import Foundation
 
 struct Phone: Codable {
-    let countryCode: String
-    let phoneNumber: String
+    let country_code: String
+    let phone_number: String
 }
