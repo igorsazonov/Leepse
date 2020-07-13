@@ -21,6 +21,7 @@ class LastScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBarItems()
+        //userNameLabel.text = nameSignIn
     }
     
     func gotoFirstScreenViewController() {

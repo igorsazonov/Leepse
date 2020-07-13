@@ -144,8 +144,8 @@
 				F7A9EC5C24B843BC00677E92 /* Phone.swift */,
 				F7A9EC8424B9068C00677E92 /* NumberPhone.swift */,
 				F7A9EC5A24B8428A00677E92 /* User.swift */,
-				F7B2C89A24BB479D00D6E2E6 /* UserRegistered.swift */,
 				F7B2C89C24BB47BD00D6E2E6 /* UserResponse.swift */,
+				F7B2C89A24BB479D00D6E2E6 /* UserRegistered.swift */,
 				F7B2C89E24BB47F600D6E2E6 /* ResponseError.swift */,
 				F7A9EC8624BA093B00677E92 /* ServicesUser.swift */,
 			);

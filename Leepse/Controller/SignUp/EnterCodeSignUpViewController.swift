@@ -32,7 +32,7 @@ class EnterCodeSignUpViewController: UIViewController {
     
     func registrationUser() {
         let userName = userNameGlobalVar
-        let phoneNumber = phoneNumberGlobalVar
+        let phoneNumber = phoneNumberSignUp
         let verificationCode = codeTextField.text ?? ""
         servicesUser.registationUser(user: UserSignUp(verification_code: verificationCode, phone: Phone(country_code: "7", phone_number: phoneNumber), user: User(username: userName)), responseHandler: { (response) in
             if response.statusCode >= 200 && response.statusCode < 300 {
@@ -41,7 +41,7 @@ class EnterCodeSignUpViewController: UIViewController {
                 }
             }
         }, userHandler: {(user) in
-            // сохранение в Realm
+            nameSignUp = user.user.username // сохранение в Realm
         }, errorHandler: { (error) in
             DispatchQueue.main.async {
                 self.messageLabel.text = error.errors.first // вывод ошибки на экран
@@ -56,7 +56,7 @@ class EnterCodeSignUpViewController: UIViewController {
     }
     
     func setupLabelAndButton() {
-        self.numberLabel.text = phoneNumberGlobalVar
+        self.numberLabel.text = phoneNumberSignUp
         self.numberLabel.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         messageLabel.text = ""
         messageLabel.textColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)

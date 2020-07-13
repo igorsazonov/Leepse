@@ -7,7 +7,8 @@
 //
 
 import UIKit
-var phoneNumberGlobalVar = ""
+var phoneNumberSignUp = ""
+var nameSignUp = ""
 
 class PhoneNumberSignUpViewController: UIViewController {
     
@@ -37,7 +38,7 @@ class PhoneNumberSignUpViewController: UIViewController {
     func registrationPhoneNumber() {
         let countryCode = "7"
         let phoneNumber = phoneNumberTextField.text ?? ""
-        phoneNumberGlobalVar = phoneNumber
+        phoneNumberSignUp = phoneNumber
         let numberPhone = NumberPhone(phone: Phone(country_code: countryCode, phone_number: phoneNumber))
         servicesUser.registationPhoneNumber(phone: numberPhone, responseHandler: { (response) in
             if response.statusCode >= 200 && response.statusCode < 300 {
