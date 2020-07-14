@@ -27,7 +27,6 @@
 		F7B2C89B24BB479D00D6E2E6 /* UserRegistered.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B2C89A24BB479D00D6E2E6 /* UserRegistered.swift */; };
 		F7B2C89D24BB47BD00D6E2E6 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B2C89C24BB47BD00D6E2E6 /* UserResponse.swift */; };
 		F7B2C89F24BB47F600D6E2E6 /* ResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B2C89E24BB47F600D6E2E6 /* ResponseError.swift */; };
-		F7B2C8A124BB515900D6E2E6 /* UserRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B2C8A024BB515900D6E2E6 /* UserRealm.swift */; };
 		F7DA996E24B4EA5900972177 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DA996D24B4EA5900972177 /* SignIn.storyboard */; };
 		F7DA997024B4EAAF00972177 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DA996F24B4EAAF00972177 /* SignUp.storyboard */; };
 		F7DA997224B4EC5900972177 /* EnterPhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DA997124B4EC5900972177 /* EnterPhoneNumberViewController.swift */; };
@@ -59,7 +58,6 @@
 		F7B2C89A24BB479D00D6E2E6 /* UserRegistered.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistered.swift; sourceTree = "<group>"; };
 		F7B2C89C24BB47BD00D6E2E6 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
 		F7B2C89E24BB47F600D6E2E6 /* ResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseError.swift; sourceTree = "<group>"; };
-		F7B2C8A024BB515900D6E2E6 /* UserRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRealm.swift; sourceTree = "<group>"; };
 		F7DA996D24B4EA5900972177 /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		F7DA996F24B4EAAF00972177 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		F7DA997124B4EC5900972177 /* EnterPhoneNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPhoneNumberViewController.swift; sourceTree = "<group>"; };
@@ -140,7 +138,6 @@
 			children = (
 				F7A9EC5E24B843E300677E92 /* UserSignUp.swift */,
 				F7B2C89624BAD85800D6E2E6 /* UserSignIn.swift */,
-				F7B2C8A024BB515900D6E2E6 /* UserRealm.swift */,
 				F7A9EC5C24B843BC00677E92 /* Phone.swift */,
 				F7A9EC8424B9068C00677E92 /* NumberPhone.swift */,
 				F7A9EC5A24B8428A00677E92 /* User.swift */,
@@ -324,7 +321,6 @@
 				F7B2C89B24BB479D00D6E2E6 /* UserRegistered.swift in Sources */,
 				F73C91D124B3342400744ACC /* AppDelegate.swift in Sources */,
 				F7830B1224B6E77200117599 /* UserNameViewController.swift in Sources */,
-				F7B2C8A124BB515900D6E2E6 /* UserRealm.swift in Sources */,
 				F7B2C89D24BB47BD00D6E2E6 /* UserResponse.swift in Sources */,
 				F7830B1424B6E7C300117599 /* EnterCodeSignUpViewController.swift in Sources */,
 				F7A9EC5B24B8428A00677E92 /* User.swift in Sources */,

@@ -41,7 +41,7 @@ class EnterCodeSignUpViewController: UIViewController {
                 }
             }
         }, userHandler: {(user) in
-            nameSignUp = user.user.username // сохранение в Realm
+            nameSignUp = user.user.username // сохранение локально
         }, errorHandler: { (error) in
             DispatchQueue.main.async {
                 self.messageLabel.text = error.errors.first // вывод ошибки на экран
