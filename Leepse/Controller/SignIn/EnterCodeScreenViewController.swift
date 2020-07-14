@@ -59,7 +59,10 @@ class EnterCodeScreenViewController: UIViewController {
         super.viewDidLoad()
         setupNavigationBar()
         setupLabelAndButton()
-        codeTextField.defaultTextAttributes.updateValue(50.0, forKey: NSAttributedString.Key.kern)
+        codeTextField.defaultTextAttributes.updateValue(62.0, forKey: NSAttributedString.Key.kern)
+        let leftView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 58.0, height: 0.1))
+        codeTextField.leftView = leftView
+        codeTextField.leftViewMode = .always
     }
     
     func setupLabelAndButton() {
