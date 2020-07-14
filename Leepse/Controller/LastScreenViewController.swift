@@ -11,6 +11,7 @@ import UIKit
 class LastScreenViewController: UIViewController {
 
     @IBAction func logoutTapped(_ sender: UIButton) {
+        UserDefaults.standard.set(false, forKey: "ISUSERLOGGEDIN")
         gotoFirstScreenViewController()
     }
     
@@ -18,10 +19,12 @@ class LastScreenViewController: UIViewController {
     
     @IBOutlet weak var userNameLabel: UILabel!
     
+    @IBOutlet weak var logoImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBarItems()
-        //userNameLabel.text = nameSignIn
+        userNameLabel.text = nameSignIn
     }
     
     func gotoFirstScreenViewController() {
@@ -30,8 +33,8 @@ class LastScreenViewController: UIViewController {
     }
     
     func setupNavigationBarItems() {
-        let titleImageView = UIImageView(image: #imageLiteral(resourceName: "logo (1)"))
-        titleImageView.contentMode = .scaleAspectFit
+        let titleImageView = logoImage
+        titleImageView?.contentMode = .scaleAspectFit
         navigationItem.titleView = titleImageView
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: logoutButton)
     }

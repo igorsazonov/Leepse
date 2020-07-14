@@ -35,6 +35,7 @@ class EnterCodeScreenViewController: UIViewController {
         servicesUser.signInUser(user: UserSignIn(verification_code: verificationCode, phone: Phone(country_code: "7", phone_number: phoneNumber)), responseHandler: { (response) in
             if response.statusCode >= 200 && response.statusCode < 300 {
                 DispatchQueue.main.async {
+                    UserDefaults.standard.set(true, forKey: "ISUSERLOGGEDIN") // !!!!
                     self.gotoLastScreenViewController()
                 }
             }

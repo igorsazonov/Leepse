@@ -23,6 +23,13 @@ class FirstScreenViewController: UIViewController {
         setupTheNavigationBar()
         setupButton()
         setupLabel()
+        
+        if UserDefaults.standard.bool(forKey: "ISUSERLOGGEDIN") == true {
+            //user is already logged in just navigate him to home screen
+            let lastScreenViewController = UIStoryboard(name: "Last", bundle: .main).instantiateViewController(withIdentifier: "lastVc") as! LastScreenViewController
+            //self.navigationController?.pushViewController(lastScreenViewController, animated: false)
+            self.navigationController?.setViewControllers([lastScreenViewController], animated: false)
+        }
     }
     
     func setupTheNavigationBar() {
