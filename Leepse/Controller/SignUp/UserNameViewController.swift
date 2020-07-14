@@ -39,7 +39,7 @@ class UserNameViewController: UIViewController {
     }
     
     func setupLabelAndButton() {
-        messageLabel.text = ""
+        //messageLabel.text = ""
         submitButton.layer.cornerRadius = 16.7
         submitButton.tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         submitButton.backgroundColor = #colorLiteral(red: 0.9764705882, green: 0.7176470588, blue: 0.3921568627, alpha: 1)
