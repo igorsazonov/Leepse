@@ -10,8 +10,6 @@ import UIKit
 
 class EnterCodeSignUpViewController: UIViewController {
 
-    let userNameViewController = UserNameViewController()
-    let phoneNumberSignUpViewController = PhoneNumberSignUpViewController()
     let servicesUser = ServicesUser()
     
     @IBOutlet weak var submitButton: UIButton!
