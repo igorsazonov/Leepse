@@ -11,7 +11,7 @@ import UIKit
 class LastScreenViewController: UIViewController {
 
     @IBAction func logoutTapped(_ sender: UIButton) {
-        UserDefaults.standard.set(false, forKey: "ISUSERLOGGEDIN")
+        UserDefaults.standard.set(false, forKey: "IsUserLoggedIn")
         UserDefaults.standard.removeObject(forKey: "user")
         gotoFirstScreenViewController()
     }
