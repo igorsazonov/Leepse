@@ -35,12 +35,15 @@ class EnterCodeScreenViewController: UIViewController {
         servicesUser.signInUser(user: UserSignIn(verification_code: verificationCode, phone: Phone(country_code: "7", phone_number: phoneNumber)), responseHandler: { (response) in
             if response.statusCode >= 200 && response.statusCode < 300 {
                 DispatchQueue.main.async {
-                    UserDefaults.standard.set(true, forKey: "ISUSERLOGGEDIN") // !!!!
+                    UserDefaults.standard.set(true, forKey: "ISUSERLOGGEDIN")
                     self.gotoLastScreenViewController()
                 }
             }
         }, userHandler: {(user) in
             nameSignIn = user.user.username// сохранение в Realm
+            let name = user.user.username
+            //let id = String(user.user.id)
+            UserDefaults.standard.set(name,forKey: "user")
         }, errorHandler: { (error) in
             DispatchQueue.main.async {
                 self.errorMessage.textColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)

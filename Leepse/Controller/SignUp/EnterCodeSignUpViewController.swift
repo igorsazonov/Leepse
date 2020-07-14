@@ -37,12 +37,15 @@ class EnterCodeSignUpViewController: UIViewController {
         servicesUser.registationUser(user: UserSignUp(verification_code: verificationCode, phone: Phone(country_code: "7", phone_number: phoneNumber), user: User(username: userName)), responseHandler: { (response) in
             if response.statusCode >= 200 && response.statusCode < 300 {
                 DispatchQueue.main.async {
-                    UserDefaults.standard.set(true, forKey: "ISUSERLOGGEDIN") // !!!!
+                    UserDefaults.standard.set(true, forKey: "ISUSERLOGGEDIN")
                     self.gotoLastScreenViewController()
                 }
             }
         }, userHandler: {(user) in
             nameSignUp = user.user.username // сохранение локально
+            let name = user.user.username
+            //let id = String(user.user.id)
+            UserDefaults.standard.set(name,forKey: "user")
         }, errorHandler: { (error) in
             DispatchQueue.main.async {
                 self.messageLabel.text = error.errors.first // вывод ошибки на экран

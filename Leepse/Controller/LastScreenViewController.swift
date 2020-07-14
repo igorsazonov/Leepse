@@ -12,6 +12,7 @@ class LastScreenViewController: UIViewController {
 
     @IBAction func logoutTapped(_ sender: UIButton) {
         UserDefaults.standard.set(false, forKey: "ISUSERLOGGEDIN")
+        UserDefaults.standard.removeObject(forKey: "user")
         gotoFirstScreenViewController()
     }
     
@@ -23,8 +24,7 @@ class LastScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupNavigationBarItems()
-        userNameLabel.text = nameSignIn
+        userNameLabel.text = UserDefaults.standard.string(forKey: "user")
     }
     
     func gotoFirstScreenViewController() {
