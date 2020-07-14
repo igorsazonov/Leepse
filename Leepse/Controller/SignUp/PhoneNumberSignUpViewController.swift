@@ -49,6 +49,7 @@ class PhoneNumberSignUpViewController: UIViewController {
                 }
             } else {
                 DispatchQueue.main.async {
+                    self.messageLabel.textColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
                     self.messageLabel.text = "This number is already registered.Sign in at this number or register a new one"
                 }
             }
