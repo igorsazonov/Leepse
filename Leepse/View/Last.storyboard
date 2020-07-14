@@ -43,7 +43,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3Q-yw-dq5">
-                                <rect key="frame" x="297" y="58" width="76" height="25"/>
+                                <rect key="frame" x="295" y="49" width="76" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="logout" image="logoutButton">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -59,13 +59,13 @@
                         <constraints>
                             <constraint firstItem="yNk-T6-4oG" firstAttribute="leading" secondItem="enE-zY-EEJ" secondAttribute="leading" id="21r-wh-1Td"/>
                             <constraint firstItem="enE-zY-EEJ" firstAttribute="trailing" secondItem="yNk-T6-4oG" secondAttribute="trailing" constant="183" id="9qJ-dO-YTd"/>
-                            <constraint firstItem="O3Q-yw-dq5" firstAttribute="leading" secondItem="Ac5-PQ-r7s" secondAttribute="trailing" constant="25.5" id="ABy-8f-O1z"/>
+                            <constraint firstItem="O3Q-yw-dq5" firstAttribute="leading" secondItem="Ac5-PQ-r7s" secondAttribute="trailing" constant="23.5" id="ABy-8f-O1z"/>
                             <constraint firstAttribute="bottomMargin" secondItem="yNk-T6-4oG" secondAttribute="bottom" constant="-34" id="AWi-b1-zIB"/>
                             <constraint firstItem="Ac5-PQ-r7s" firstAttribute="centerX" secondItem="7dM-Af-chO" secondAttribute="centerX" id="BVE-rY-c0l"/>
                             <constraint firstItem="Ac5-PQ-r7s" firstAttribute="leading" secondItem="enE-zY-EEJ" secondAttribute="leading" constant="142.5" id="SCc-lG-RZN"/>
                             <constraint firstItem="Ac5-PQ-r7s" firstAttribute="top" secondItem="enE-zY-EEJ" secondAttribute="top" id="Ttz-mz-Mb6"/>
                             <constraint firstItem="O3Q-yw-dq5" firstAttribute="centerY" secondItem="Ac5-PQ-r7s" secondAttribute="centerY" id="YjV-lm-r3O"/>
-                            <constraint firstItem="O3Q-yw-dq5" firstAttribute="top" secondItem="enE-zY-EEJ" secondAttribute="top" constant="14" id="uax-LW-gcT"/>
+                            <constraint firstItem="O3Q-yw-dq5" firstAttribute="top" secondItem="enE-zY-EEJ" secondAttribute="top" constant="5" id="uax-LW-gcT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="enE-zY-EEJ"/>
                     </view>
@@ -78,7 +78,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KPZ-qf-YxD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="1Er-dE-iPD" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-10" y="65"/>
+            <point key="canvasLocation" x="-10.144927536231885" y="64.955357142857139"/>
         </scene>
     </scenes>
     <resources>

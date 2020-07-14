@@ -41,7 +41,7 @@ class EnterCodeScreenViewController: UIViewController {
             }
         }, userHandler: {(user) in
             let name = user.user.username
-            UserDefaults.standard.set(name,forKey: "user") // сохранение локально
+            UserDefaults.standard.set(name, forKey: "user") // сохранение локально
         }, errorHandler: { (error) in
             DispatchQueue.main.async {
                 self.errorMessage.textColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
