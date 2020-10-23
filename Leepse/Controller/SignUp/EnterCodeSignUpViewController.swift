@@ -41,7 +41,7 @@ class EnterCodeSignUpViewController: UIViewController {
             }
         }, userHandler: {(user) in
             let name = user.user.username
-            UserDefaults.standard.set(name,forKey: "user") // сохранение локально
+            UserDefaults.standard.set(name, forKey: "user") // сохранение локально
         }, errorHandler: { (error) in
             DispatchQueue.main.async {
                 self.messageLabel.text = error.errors.first // вывод ошибки на экран
