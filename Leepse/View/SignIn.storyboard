@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wzu-TJ-t0z">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wzu-TJ-t0z">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -58,7 +59,7 @@
                                     <constraint firstAttribute="height" constant="54" id="H58-1h-F59"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IwD-vR-VDv">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IwD-vR-VDv">
                                 <rect key="frame" x="92" y="307" width="229" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="K7i-jh-s7B"/>
@@ -78,7 +79,8 @@
                                 <color key="backgroundColor" red="0.97647058819999999" green="0.71764705880000002" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="mCF-Ta-spp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="zdh-Lg-bYb" firstAttribute="bottom" secondItem="xwi-dU-GR1" secondAttribute="bottom" id="0Xn-Ok-K1h"/>
                             <constraint firstItem="IwD-vR-VDv" firstAttribute="top" secondItem="qDj-OT-bxc" secondAttribute="bottom" constant="50" id="5fO-nc-zxc"/>
@@ -112,7 +114,6 @@
                             <constraint firstItem="HgK-eD-sE2" firstAttribute="top" secondItem="lH7-jt-NmE" secondAttribute="bottom" constant="3" id="yFB-zN-0dE"/>
                             <constraint firstItem="uLp-th-qIX" firstAttribute="top" secondItem="lH7-jt-NmE" secondAttribute="bottom" constant="7" id="yj0-jb-aoX"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="mCF-Ta-spp"/>
                     </view>
                     <navigationItem key="navigationItem" id="fP1-9V-231"/>
                     <connections>
@@ -184,7 +185,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuk-xS-UUS">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuk-xS-UUS">
                                 <rect key="frame" x="92" y="307" width="229" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="qnR-Mn-Wle"/>
@@ -212,7 +213,8 @@
                                 <color key="backgroundColor" red="0.97647058819999999" green="0.71764705880000002" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="HQy-dr-WFK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="UdI-iC-M0U" firstAttribute="leading" secondItem="HQy-dr-WFK" secondAttribute="leading" constant="15" id="13s-4M-sd0"/>
                             <constraint firstItem="b78-Ql-9s4" firstAttribute="top" secondItem="gXr-WO-ME1" secondAttribute="bottom" constant="8" id="54X-fF-T1D"/>
@@ -258,7 +260,6 @@
                             <constraint firstItem="gXr-WO-ME1" firstAttribute="leading" secondItem="HQy-dr-WFK" secondAttribute="leading" constant="142.5" id="zmt-oe-H6O"/>
                             <constraint firstItem="HQy-dr-WFK" firstAttribute="trailing" secondItem="r3s-xi-s0c" secondAttribute="trailing" constant="15" id="zra-wu-kDL"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="HQy-dr-WFK"/>
                     </view>
                     <navigationItem key="navigationItem" id="bGj-8E-hBm"/>
                     <connections>
@@ -276,5 +277,8 @@
     <resources>
         <image name="USA" width="48" height="48"/>
         <image name="logo (1)" width="129.5" height="53.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
